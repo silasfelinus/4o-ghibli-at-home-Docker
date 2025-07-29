@@ -1,0 +1,9 @@
+services:
+  kind-robots:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flux-kontext
+    ports:
+      - 3109:3000
+    restart: unless-stopped
